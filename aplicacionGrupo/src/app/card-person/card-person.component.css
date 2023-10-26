@@ -1,0 +1,51 @@
+.card-person {
+    width: 350px;
+    border: 2px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    opacity: 0.5;
+    transform:scaleX(1.0) ;/* Cuando la clase 'show' se agrega, la tarjeta se volverá visible */
+    transition: all 0.3s ease-in;
+}
+
+.card-person.show {
+    opacity: 1; 
+    transform:scale(1.1); 
+   }
+  
+
+.card-person img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.nombre {
+
+    font-size: 1.5em;
+    /* Aumentando el tamaño del nombre */
+    color: #333;
+    margin-bottom: 0.2em;
+    /* Reduciendo el espacio inferior */
+    text-transform: uppercase;
+    /* Convirtiendo el texto a mayúsculas */
+    font-weight: bold;
+    /* Haciendo que el nombre sea más audaz */
+}
+
+.edad {
+    margin: 0.5em 0;
+    font-size: 1.2em
+}
+
+.description {
+    margin: 0.5em 0;
+    font-size: 1em;
+    color: #ccc;
+}

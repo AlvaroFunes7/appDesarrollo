@@ -5,9 +5,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { VistaComponent } from './vista/vista.component';
 import { FootterComponent } from './footter/footter.component';
-import { CarPersonComponent } from './car-person/car-person.component';
 import { FormPersonComponent } from './form-person/form-person.component';
 import { CardPersonComponent } from './card-person/card-person.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,12 +15,13 @@ import { CardPersonComponent } from './card-person/card-person.component';
     HeaderComponent,
     VistaComponent,
     FootterComponent,
-    CarPersonComponent,
     FormPersonComponent,
-    CardPersonComponent
+    CardPersonComponent,
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
