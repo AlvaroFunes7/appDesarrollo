@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Persona } from '../interfaces/persona.interface';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-vista',
@@ -9,6 +10,8 @@ import { Persona } from '../interfaces/persona.interface';
 export class VistaComponent {
 
   arrUsuarios!:Persona[];
+
+  @Input() usuarioCreado!:Persona;
 
   constructor(){
     this.arrUsuarios= [
@@ -36,5 +39,24 @@ export class VistaComponent {
 
     ]
   }
+
+
+  guardarUser($event:any){
+
+    let isOk: boolean = false;
+    this.arrUsuarios.find(obj => obj.fotografia_url == $event.fotografia_url ?isOk = true : isOk = false)
+    if( isOk) {
+      this.arrUsuarios.push($event)
+    }else {
+      Swal.fire("¡USUARIO REPETIDO!")
+    }
+
+
+    
+  }
+
+
+
+ 
 
 }

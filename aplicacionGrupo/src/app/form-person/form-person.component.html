@@ -1,32 +1,32 @@
-<p>form-person works!</p>
+
 
 <div class="form-person">
     <div class="field">
         <label >
             url_foto:
-            <input type="text">
+            <input [(ngModel)]="usuario.fotografia_url" type="text">
 
         </label>
     </div>
     <div class="field">
         <label >
             nombre:
-            <input type="text">
+            <input [(ngModel)]="usuario.nombre_completo" type="text">
         </label>
     </div>
     <div class="field">
         <label >
             edad:
-            <input type="number" >
+            <input [(ngModel)]="usuario.edad" type="number" >
 
         </label>
     </div>
     <div class="field">
         <label >
             breve descripción:
-            <textarea name="" id="" cols="30" rows="2"></textarea>
+            <textarea [(ngModel)]="usuario.description" name="" id="" cols="30" rows="2" ></textarea>
         </label>
     </div>
 
-    <button>ENVIAR</button>
+    <button (click)="anyadir_usuario(usuario)">ENVIAR</button>
 </div>

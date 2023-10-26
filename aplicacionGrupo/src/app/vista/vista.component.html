@@ -1,7 +1,9 @@
-<p>vista works!</p>
+
 <div class="container-user" >
     <app-card-person  *ngFor="let usuario of arrUsuarios" [usuarioRecibido]="usuario"></app-card-person>
     
 </div>
-
-<app-form-person></app-form-person>
+<div class="form-user">
+    <app-form-person (usuarioEnviado)="guardarUser($event)"></app-form-person>
+    
+</div>
