@@ -5,3 +5,9 @@
   margin: 50px auto;
   flex-wrap: wrap;
 }
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
