@@ -45,7 +45,7 @@ export class VistaComponent {
 
     let isOk: boolean = false;
     this.arrUsuarios.find(obj => obj.fotografia_url == $event.fotografia_url ?isOk = true : isOk = false)
-    if( isOk) {
+    if( !isOk) {
       this.arrUsuarios.push($event)
     }else {
       Swal.fire("¡USUARIO REPETIDO!")
