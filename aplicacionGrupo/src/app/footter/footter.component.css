@@ -1,0 +1,69 @@
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.iconos{
+    padding: auto;
+    margin: auto;
+    text-align: center;
+}
+
+#instagram{
+    width: 100px;
+    height: 100px;
+    
+}
+
+#x{
+    width: 130px;
+    height: 100px;
+    margin-right: 450px;
+    margin-left: 450px;
+    
+}
+
+#facebook{
+    width: 100px;
+    height: 100px;
+    
+    
+}
+
+.button {
+    all: unset;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background-color: #ccc;
+  }
+  
+  .button:active {
+    background-color: #aaa;
+  }
+
+#bAyuda{
+  
+    background-color: #000;
+    color: #fff;
+    margin :auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    
+  
+}
+#scroll-to-top a {
+    background-color: #000;
+    color: #fff;
+    margin :auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
