@@ -31,7 +31,21 @@ h1 {
 }
 
 .button {
-    
+    all: unset;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background-color: #ccc;
+  }
+  
+  .button:active {
+    background-color: #aaa;
   }
 
 #bAyuda{
