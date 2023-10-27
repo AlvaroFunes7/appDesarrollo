@@ -1,7 +1,6 @@
 
   header {
     display: flex;
-    position: fixed;
     align-items: center;
     border: red;
     padding-top: 20px;
