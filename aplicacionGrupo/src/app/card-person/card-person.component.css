@@ -1,5 +1,6 @@
 .card-person {
     width: 350px;
+    height: 35rem;
     border: 2px solid #ccc;
     display: flex;
     flex-direction: column;
@@ -19,12 +20,20 @@
     opacity: 1; 
     transform:scale(1.1); 
    }
+
+.card-person div.img{
+    height: 25rem;
+    
+}
   
 
 .card-person img {
     width: 100%;
+    height: 100%;
     border-radius: 10%;
 }
+
+
 
 .nombre {
 
