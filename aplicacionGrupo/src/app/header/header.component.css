@@ -4,6 +4,9 @@
     width: 100%;
     height: var(--heading-height);
     top: 0;
-    background-color: green;
-    border: 2px solid #4CAF50;
+    background-color: rgb(57, 110, 216);
+    border: 2px solid #484dc7;
+  }
+  .logo{
+    width: 20%;
   }
