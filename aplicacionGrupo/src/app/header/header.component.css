@@ -1,5 +1,5 @@
 
-  .logo {
+  header {
     display: flex;
     position: fixed;
     align-items: center;
@@ -9,4 +9,8 @@
     padding-right: 5%;
     font-weight: bold;
     
+  }
+  .logo{
+    width: 30%;
+    align-items: left;
   }
