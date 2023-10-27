@@ -1,6 +1,6 @@
 
   header {
-    display: inline-block;
+    display: inline-flex;
     align-items: center;
     border: red;
     padding-top: 20px;
