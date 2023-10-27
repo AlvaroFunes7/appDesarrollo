@@ -2,7 +2,6 @@
   header {
     display: flex;
     align-items: center;
-    border: red;
     padding-top: 20px;
     padding-left: 5%;
     padding-right: 5%;
@@ -10,8 +9,8 @@
     
   }
   .logo{
-    width: 30%;
-    align-items: left;
+    width: 45%;
+    padding-left: 5%;
   }
   .textos{
     display: inline-block;
