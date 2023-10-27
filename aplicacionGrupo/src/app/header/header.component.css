@@ -1,17 +1,12 @@
 
-  header {
+  .logo {
+    display: flex;
     position: fixed;
     align-items: center;
-    width: 100%;
-    height: var(--heading-height);
-    top: 0;
-    padding: 10px 20px;
-    background-color: rgb(57, 110, 216);
-    border: 2px solid #484dc7;
-    background-size: cover
+    border: red;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
     
-    
-  }
-  .logo{
-    width: 20%;
   }
