@@ -1,6 +1,6 @@
 
   header {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     border: red;
     padding-top: 20px;
@@ -12,4 +12,7 @@
   .logo{
     width: 30%;
     align-items: left;
+  }
+  .cab{
+    display: inline-flex;
   }
