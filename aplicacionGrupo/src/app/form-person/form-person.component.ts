@@ -29,12 +29,11 @@ export class FormPersonComponent {
 
   anyadir_usuario(usuario:Persona) {
 
-   if(this.comprobarUsuario(usuario)) {
+   if(this.comprobarUsuario(usuario) ) {
    this.usuarioEnviado.emit(usuario);
    }
 
-
-   reiniciarForm()
+   this.reiniciarForm()
 
   }
 
@@ -63,7 +62,4 @@ export class FormPersonComponent {
 }
 
 
-function reiniciarForm() {
-  throw new Error('Function not implemented.');
-}
 

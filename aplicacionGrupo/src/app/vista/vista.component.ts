@@ -38,18 +38,23 @@ export class VistaComponent {
       }
 
     ]
+
+   
   }
 
 
   guardarUser($event:any){
 
     let isOk: boolean = false;
-    this.arrUsuarios.find(obj => obj.fotografia_url == $event.fotografia_url ?isOk = true : isOk = false)
-    if( !isOk) {
-      this.arrUsuarios.push($event)
-    }else {
+    let usuario:Persona = $event
+    this.arrUsuarios.find(obj => obj.fotografia_url === $event.fotografia_url ?isOk = true : isOk = false)
+    if( isOk) {
       Swal.fire("¡USUARIO REPETIDO!")
+    }else {
+      this.arrUsuarios.push(usuario)
     }
+
+    console.log(this.arrUsuarios);
 
 
     
