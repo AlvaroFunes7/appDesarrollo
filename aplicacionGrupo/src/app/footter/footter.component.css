@@ -1,69 +1,89 @@
-h1 {
-    color: white;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.fa-instagram{
 
-.iconos{
-    padding: auto;
+    width: 45px;
+    height: 45px;
+}
+.fa-facebook{
+    width: 45px;
+    height: 45px;
+}
+.fa-twitter{
+    width: 45px;
+    height: 45px;
+}
+.fa-youtube{
+    width: 45px;
+    height: 45px;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
     text-align: center;
+    transition: all 300ms ease;
 }
-
-#instagram{
-    width: 100px;
-    height: 100px;
-    
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
 }
-
-#x{
-    width: 130px;
-    height: 100px;
-    margin-right: 450px;
-    margin-left: 450px;
-    
-}
-
-#facebook{
-    width: 100px;
-    height: 100px;
-    
-    
-}
-
-.button {
-    all: unset;
-    background-color: #000;
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
     color: #fff;
-    font-size: 14px;
-    padding: 10px 20px;
-    border: solid 1px #ccc;
-    border-radius: 5px;
-  }
-  
-  .button:hover {
-    background-color: #ccc;
-  }
-  
-  .button:active {
-    background-color: #aaa;
-  }
-
-#bAyuda{
-  
-    background-color: #000;
-    color: #fff;
-    margin :auto;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    
-  
 }
-#scroll-to-top a {
-    background-color: #000;
-    color: #fff;
-    margin :auto;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-  }
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
