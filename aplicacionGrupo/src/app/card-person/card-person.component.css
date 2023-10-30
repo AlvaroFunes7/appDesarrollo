@@ -23,7 +23,7 @@
 
 .card-person div.img{
     height: 25rem;
-    
+    overflow: hidden;
 }
   
 
