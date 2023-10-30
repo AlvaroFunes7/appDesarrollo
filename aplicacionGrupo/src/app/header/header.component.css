@@ -1,17 +1,28 @@
-header {
-  background-color: rgb(208, 205, 163);
-  color: white;
-  padding: 10px 0;
-  text-align: center;
+header{
+  padding-top:0;
+
+  color: aquamarine;
 }
 
-.logo {
-  float: left;
-  margin-left: 20px;
-  width: "40px"; 
-  height:"40px";
+nav{
+  display :flex;
+  align-items:center;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: bold;
 }
-
-.text {
+.logo{
+    width: 10%;
+  }
+ 
+  ul li{
+  text-transform: uppercase;
   display: inline-block;
-}
+  padding: 0px 20px;
+  }
+  a{
+  color:rgb(0, 0, 0);
+  text-decoration :none;
+  }
