@@ -1,39 +1,73 @@
-header{
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
 
-  background-color: rgb(198, 204, 203);
+
+*{
+  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
 }
 
-nav{
-  display :flex;
-  align-items:center;
-  justify-content: space-between;
- 
-  padding-left: 5%;
-  padding-right: 5%;
-  font-weight: bold;
+.header{
+  
+    background-color: #4d545b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    padding: 5px 10%;
 }
-.logo{
-    
-    max-width: 115px;
-  }
- 
-  ul li{
+h1{
+  font-family: 'Abhaya Libre', serif;
+  color: white;
+  font-size: 35px;
   text-transform: uppercase;
-  display: inline-block;
-  padding: 0px 20px;
-  }
-  a{
-  color:rgb(0, 0, 0);
-  text-decoration :none;
-  }
-  .titulo{
-  text-align: center; 
-  font-family: monospace rgb(255, 255, 255); 
-  font-weight: bold;
-  font-size: 30px; 
-  background: #ffffff;
-  text-transform: uppercase; 
-  background-clip: text; 
-  color: transparent; 
-  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(215, 191, 191, 0.3);
-  }
+  
+}
+.eye{
+  font-family: 'Abhaya Libre', serif;
+  color: white;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.header .logo img{
+  
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+  
+    transform: scale(1.2);
+}
+
+.header .boton_vista button{
+    align-items: center;
+    color: #1b3039;
+    padding: 9px 12px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.header{
+  padding: 5px 2%;
+  display: flex;
+  justify-content: space-between;
+}
+.eye{
+  
+  align-items: center;
+  height: 24px;
+  width: auto;
+  transition: all 0.3s;
+}
+.header .boton_vista button:hover{
+    background-color: #5a666c;
+    transform: scale(1.1);
+}
