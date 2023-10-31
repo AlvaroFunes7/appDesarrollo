@@ -10,7 +10,8 @@
 } */
 
 .header{
-    overflow-x: hidden;
+    
+    height: auto;
 }
 
 .container {
