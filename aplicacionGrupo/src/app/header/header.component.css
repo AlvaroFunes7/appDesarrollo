@@ -62,6 +62,7 @@ h1{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border: 1px solid red;
 }
 
 .boton_vista {
@@ -75,8 +76,8 @@ h1{
 }
 
 .nav-bar .logo{
-width: 70px;
-height: 40px;
+  width: 70px;
+  height: 40px;
 }
 
 .nav-bar .logo img{
