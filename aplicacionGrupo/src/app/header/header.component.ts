@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  isVisible!:boolean;
+
+
+  constructor() {
+    this.isVisible = true;
+  }
+
+
+
+  changeVisible() {
+    this.isVisible = ! this.isVisible;
+    console.log(this.isVisible + "clickaste");
+  }
 }

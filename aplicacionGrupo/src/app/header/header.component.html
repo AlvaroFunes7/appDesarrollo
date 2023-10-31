@@ -7,11 +7,7 @@
     <h1>Práctica 1 - ANGULAR</h1>
   
   <div class="boton_vista">
-  <a>
-    <button>
-      <img src="assets/icons/eye_closed.png" class="eye">
-    </button>
-  </a>
+      <img [src]="isVisible ? 'assets/icons/eye_closed.png' : 'assets/icons/eye_open.png'" (click)="changeVisible()" />
   </div>
 </header>
 

@@ -40,3 +40,14 @@ h1{
     background-color: #5a666c;
     transform: scale(1.1);
 }
+
+/* .boton_vista {
+  height: 50px;
+  width: 20px;
+}
+
+*/
+.boton_vista img {
+  height: 20px;
+  width: 30px;
+} 
