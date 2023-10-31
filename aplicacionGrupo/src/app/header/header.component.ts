@@ -8,10 +8,12 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
 
   isVisible!:boolean;
+  isDark!:boolean;
 
 
   constructor() {
     this.isVisible = true;
+    this.isDark = false;
   }
 
 
@@ -19,5 +21,9 @@ export class HeaderComponent {
   changeVisible() {
     this.isVisible = ! this.isVisible;
     console.log(this.isVisible + "clickaste");
+  }
+  changeMode() {
+    this.isDark = ! this.isDark;
+    console.log(this.isDark + "clickaste");
   }
 }
