@@ -12,3 +12,7 @@
   height: 100px;
   background-color: transparent;
 }
+
+body{
+  border: 10px solid rgb(255, 0, 0);
+}
