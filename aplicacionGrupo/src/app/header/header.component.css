@@ -72,6 +72,11 @@ h1{
   text-transform: uppercase;
   color: white;
   font-family: monospace;
+  
+}
+title{
+  text-align: center;
+  
 }
 .boton_vista {
   padding: 0;
@@ -99,10 +104,26 @@ h1{
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
+.vista_cartas_2{
+  align-items: center;
+  color: #4c626b;
+  padding: 9px 12px;
+  background: #8c9398;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
 
 .nav-bar .logo{
-  width: 100px;
-  height: 60px;
+  width: 160px;
+  height: 70px;
+  margin-left: -20px;
+  
+
+}
+.logo_img{
+  margin-left: -100px;
 }
 
 .nav-bar .logo img{
