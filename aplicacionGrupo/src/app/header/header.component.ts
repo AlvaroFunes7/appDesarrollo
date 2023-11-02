@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,23 +7,30 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  @Output() visible:EventEmitter<boolean>;
+
   isVisible!:boolean;
   isDark!:boolean;
 
 
   constructor() {
     this.isVisible = true;
-    this.isDark = false;
+    
+    this.visible= new EventEmitter();
+  }
+  
+  ngOnInit() {
+    this.visible.emit(this.isVisible)
+    
   }
 
 
-
+ 
+  
   changeVisible() {
     this.isVisible = ! this.isVisible;
+    this.visible.emit(this.isVisible)
     console.log(this.isVisible + "clickaste");
   }
-  changeMode() {
-    this.isDark = ! this.isDark;
-    console.log(this.isDark + "clickaste");
-  }
+ 
 }

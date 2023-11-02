@@ -1,9 +1,9 @@
 <div class="header">
-  <app-header></app-header>
+  <app-header (visible)="getVisible($event)"></app-header>
 </div>
 <div class="container">
 
-  <app-vista ></app-vista>
+  <app-vista [visible]="visible" ></app-vista>
 
 </div>
 <div class="footer">

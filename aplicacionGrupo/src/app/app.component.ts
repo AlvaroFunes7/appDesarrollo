@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'aplicacionGrupo';
+
+  visible!:boolean;
+
+
+
+  getVisible($event:any) {
+    this.visible = $event
+    console.log("Desde appcomponent, ", this.visible);
+  }
 }

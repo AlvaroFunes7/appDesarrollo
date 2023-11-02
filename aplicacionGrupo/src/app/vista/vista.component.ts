@@ -12,6 +12,9 @@ export class VistaComponent {
   arrUsuarios!:Persona[];
 
   @Input() usuarioCreado!:Persona;
+  @Input() visible!:boolean
+
+  
 
   constructor(){
     this.arrUsuarios= [
@@ -39,9 +42,16 @@ export class VistaComponent {
 
     ]
 
+    
+
    
   }
 
+  ngOnInit() {
+    console.log(this.visible," DESDE HIJO");
+  }
+
+  
 
   guardarUser($event:any){
 

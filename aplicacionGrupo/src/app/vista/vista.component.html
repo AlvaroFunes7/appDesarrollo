@@ -1,5 +1,5 @@
 
-<div class="container-user" >
+<div class="container-user" *ngIf="visible" >
     <app-card-person  *ngFor="let usuario of arrUsuarios" [usuarioRecibido]="usuario"></app-card-person>
     
 </div>
