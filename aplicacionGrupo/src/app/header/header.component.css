@@ -56,6 +56,7 @@ h1{
   display: flex;
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
 
 .nav-bar {
   width: 100%;
@@ -63,7 +64,7 @@ h1{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid red;
+  border: 5px solid gray;
   
 }
 h1{
@@ -71,7 +72,7 @@ h1{
   font-size: 30px;
   text-transform: uppercase;
   color: white;
-  font-family: monospace;
+  font-family: 'Abhaya Libre', serif;
   
 }
 title{
