@@ -17,29 +17,9 @@ export class VistaComponent {
   
 
   constructor(){
+
     this.arrUsuarios= [
-      {
-        fotografia_url : "assets\\christian_garcia.jpeg",
-        nombre_completo : "Christian Garcia Jara",
-        edad: "21",
-        description: "Buscando trabajo "
-
-      },
-      {
-        fotografia_url : "assets\\carlos_ramirez.jpeg",
-        nombre_completo : "Carlos Ramirez Paez",
-        edad: "21",
-        description: "Buscando trabajo "
-
-      },
-      {
-        fotografia_url : "assets\\alvaro_funes.jpeg",
-        nombre_completo : "Alvaro Funes",
-        edad: "21",
-        description: "Buscando trabajo "
-
-      }
-
+      
     ]
 
     
@@ -48,7 +28,37 @@ export class VistaComponent {
   }
 
   ngOnInit() {
-    console.log(this.visible," DESDE HIJO");
+    
+    const response = localStorage.getItem("arrCards");
+
+    if(response == null){
+      this.arrUsuarios = [
+        {
+          fotografia_url : "assets\\christian_garcia.jpeg",
+          nombre_completo : "Christian Garcia Jara",
+          edad: "21",
+          description: "THE UI DESIGNER"
+  
+        },
+        {
+          fotografia_url : "assets\\carlos_ramirez.jpeg",
+          nombre_completo : "Carlos Ramirez Paez",
+          edad: "22",
+          description: "THE DEVELOPER"
+  
+        },
+        {
+          fotografia_url : "assets\\alvaro_funes.jpeg",
+          nombre_completo : "Alvaro Funes",
+          edad: "24",
+          description: "THE LEADER BOSS"
+  
+        }
+  
+      ]
+    }else {
+      this.arrUsuarios =JSON.parse(response) ;
+    }
   }
 
   
@@ -62,6 +72,7 @@ export class VistaComponent {
       Swal.fire("¡USUARIO REPETIDO!")
     }else {
       this.arrUsuarios.push(usuario)
+      localStorage.setItem("arrCards", JSON.stringify(this.arrUsuarios))
     }
 
     console.log(this.arrUsuarios);
