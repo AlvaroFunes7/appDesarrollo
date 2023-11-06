@@ -13,25 +13,15 @@
 h1{
   
   width: 100%;
-	color: transparent;
+	color: white;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 60px;
+	font-size: 40px;
 	font-weight: bold;
-
-	background-image: url('https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg');
-	background-size: cover;
-	background-position-y: 50px;
-	
-	background-clip: text;
-	-webkit-background-clip: text;
-
-	-webkit-text-fill-color: transparent;
-
-  
+  font-family: 'Gabarito', sans-serif;
 }
 title{
-  text-align: center;
+  align-items: center;
   
 }
 .boton_vista {
@@ -75,7 +65,7 @@ title{
 .nav-bar .logo{
   width: 160px;
   height: 70px;
-  margin-left: -20px;
+  margin-left: 10px;
   
 
 }
