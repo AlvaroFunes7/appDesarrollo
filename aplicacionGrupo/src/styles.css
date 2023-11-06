@@ -22,8 +22,10 @@ body {
   padding: 0px;
 }
 .header{
-  width: 100%;
+  width: auto;
+  height: auto;
   background-color: #4d545b;
+  border: 5px solid gray;
 }
 .footer {
   width: 100%;
