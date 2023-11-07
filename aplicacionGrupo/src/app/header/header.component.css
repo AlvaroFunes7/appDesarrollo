@@ -39,11 +39,12 @@ h1{
 .vista_cartas:hover{
   
   transform: scale(1.2);
+  
 }
 .boton_vista .vista_cartas{
   align-items: center;
   color: #1b3039;
-  padding: 9px 12px;
+  padding: 10px 12px;
   background: #eceff1;
   border: none;
   border-radius: 50px;
@@ -53,8 +54,7 @@ h1{
 .vista_cartas_2{
   align-items: center;
   color: #4c626b;
-  padding: 9px 12px;
-  background: #8c9398;
+  padding: 10px 12px;
   border: none;
   border-radius: 50px;
   cursor: pointer;
